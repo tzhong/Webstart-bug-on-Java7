@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+">
+    <information>
+        <title>Dynamic Tree Demo</title>
+        <vendor>Dynamic Team</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.6+"
+              href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="DynamicTreeDemo.jar" main="true" />
+    </resources>
+
+	<resources os="Windows" arch="x86">
+		<nativelib href="win.jar" download="eager"/>
+    </resources>
+
+	<resources os="Windows" arch="x86_64">
+		<nativelib href="win.jar" download="eager"/>
+    </resources>
+
+    <application-desc
+         name="Dynamic Tree Demo Application"
+         main-class="webstartComponentArch.DynamicTreeApplication">
+     </application-desc>
+     <update check="background"/>
+</jnlp>
